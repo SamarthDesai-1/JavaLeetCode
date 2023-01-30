@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <script src="jquery.js"></script>
+    <style>
+        #ul0 {
+            display: inline-flex;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #ul1:hover {
+            background-color: aquamarine;
+            padding: 10px;
+            border-radius: 5px;
+            margin-left: 20px;
+            height: 20px;
+        }
+        #play {
+            width: 100px;
+            height: 50px;
+            border-radius: 5px;
+            color: white;
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul id="ul0">
+            <ul id="ul1">Home</ul>
+            <ul id="ul1">About</ul>
+            <ul id="ul1">Contact Us</ul>
+            <br><br><br>
+        </ul>
+    </div>
+    <button id="play">Play</button>
+    <button id="play">Hide</button>
+    <script src="hello.js"></script>
+    <script>
+        let play = document.getElementById("play");
+        function playMusic() {
+            let audio = new Audio("Cent50.mp3");
+            audio.play();
+        }
+        play.addEventListener("click" ,playMusic);
+    </script>
+</body>
+</html>
